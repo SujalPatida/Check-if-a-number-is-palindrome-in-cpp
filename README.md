@@ -7,12 +7,12 @@ int main() {
     cout << "Enter a number: ";
     cin >> num;
 
-    original = num;  // Store original number
+    original = num;  // Store the original number
 
     while (num != 0) {
-        int digit = num % 10;            // Get last digit
-        reversed = reversed * 10 + digit; // Build reversed number
-        num = num / 10;                  // Remove last digit
+        int digit = num % 10;            // Get the last digit
+        reversed = reversed * 10 + digit; // Build the reversed number
+        num = num / 10;                  // Remove the last digit
     }
 
     if (original == reversed)
@@ -21,5 +21,4 @@ int main() {
         cout << original << " is NOT a Palindrome number." << endl;
 
     return 0;
-    }
-    
+}
